@@ -223,9 +223,9 @@ module "codebuild" {
   github_token                = var.github_oauth_token
   environment_variables       = var.environment_variables
   badge_enabled               = var.badge_enabled
-  cache_type                  = var.cache_type
-  cache_bucket_suffix_enabled = var.cache_bucket_suffix_enabled
-  local_cache_modes           = var.local_cache_modes
+#   cache_type                  = var.cache_type
+#   cache_bucket_suffix_enabled = var.cache_bucket_suffix_enabled
+#   local_cache_modes           = var.local_cache_modes
 
   context = module.this.context
 }
